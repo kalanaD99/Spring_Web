@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/controllertwo")
+@RequestMapping("two")
 public class ControllerTwo {
     public ControllerTwo(){
         System.out.println("Controller Two");

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/one")
+@RequestMapping("one")
 public class ControllerOne {
     public ControllerOne(){
         System.out.println("Controller one initiated");
