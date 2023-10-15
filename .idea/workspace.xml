@@ -2,14 +2,40 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Spring" />
+      <artifact name="RestControllers" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="433b0cd5-b8bc-4679-9a7c-bc0583e8f31f" name="Changes" comment="" />
+    <list default="true" id="433b0cd5-b8bc-4679-9a7c-bc0583e8f31f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_SpringMVC/src/main/java/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_SpringMVC/src/main/java/config/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_SpringMVC/src/main/java/controller/ControllerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_SpringMVC/src/main/java/controller/ControllerOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01_SpringMVC/src/main/java/controller/ControllerTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/_01_SpringMVC/src/main/java/controller/ControllerTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestConrollers/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestConrollers/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestConrollers/src/main/java/config/WebAppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestConrollers/src/main/java/config/WebRootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestConrollers/src/main/java/controller/ControllerOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestConrollers/src/main/java/webAppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestContrllers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestContrllers/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestContrllers/src/main/java/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestContrllers/src/main/java/WebAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestContrllers/src/main/java/cnfig/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestContrllers/src/main/java/cnfig/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestContrllers/src/main/java/cnfig/WebRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestContrllers/src/main/java/cnfig/WebRootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestContrllers/src/main/java/controller/ControllerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestContrllers/src/main/java/controller/ControllerOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestControllers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestControllers/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestControllers/src/main/java/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestControllers/src/main/java/config/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestControllers/src/main/java/config/WebRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestControllers/src/main/java/config/WebRootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/CharactorMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/CharactorMappingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/ControllerOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/ControllerOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/ExactMappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/ExactMappingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/PathVariableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/PathVariableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/WildCardMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/_02_RestControllers/src/main/java/controller/WildCardMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_RestContrllers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_RestContrllers/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +44,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b0a39d04-2475-4cb1-b3f2-12ae52cec526" />
+        <option name="url" value="https://github.com/kalanaD99/Spring_Web.git" />
+      </UrlAndAccount>
     </option>
   </component>
   <component name="LogFilters">
@@ -30,16 +70,24 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="2WiiQ9my5HJnSroI8NW3v9GHOmX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_directory_selection": "D:/2nd Sem/AAD/Spring/Projects/SpringMVC/_02_RestControllers/src/main/java",
+    "last_opened_file_path": "D:/2nd Sem/AAD/Spring/Projects/SpringMVC/_02_RestControllers/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,10 +96,23 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "d8a84f83d708b0cdd6a81157df560d43",
+    "spring.configuration.checksum": "bce631a01fbcdc3b43dbb6cdc315d345",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "HTML"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\2nd Sem\AAD\Spring\Projects\SpringMVC\_02_RestControllers\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\2nd Sem\AAD\Spring\Projects\SpringMVC\_01_SpringMVC\web\WEB-INF" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SpringMVC" />
@@ -66,17 +127,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 8.5.90" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.90" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.5.91 stable" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.91 stable" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Spring">
+        <artifact name="RestControllers">
           <settings>
-            <option name="CONTEXT_PATH" value="/Spring" />
+            <option name="CONTEXT_PATH" value="/RestControllers" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="6a78a3fe-bf9f-4b0e-b81b-fb95ec156195" />
+        <option name="BASE_DIRECTORY_NAME" value="af07fb45-7a22-4988-9f23-f8dd221a06de" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -84,7 +145,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50089" />
+        <option name="DEBUG_PORT" value="51293" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -149,7 +210,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Spring" />
+          <artifact name="RestControllers" />
         </option>
       </method>
     </configuration>
@@ -163,11 +224,16 @@
       <option name="presentableId" value="Default" />
       <updated>1697221785089</updated>
       <workItem from="1697221786094" duration="221000" />
-      <workItem from="1697252875427" duration="2742000" />
+      <workItem from="1697252875427" duration="18031000" />
+      <workItem from="1697341620361" duration="1969000" />
+      <workItem from="1697360264556" duration="11914000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

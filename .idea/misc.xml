@@ -5,7 +5,18 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/_01_SpringMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/_02_RestControllers/pom.xml" />
+        <option value="$PROJECT_DIR$/_02_RestConrollers/pom.xml" />
+        <option value="$PROJECT_DIR$/_02_RestContrllers/pom.xml" />
+        <option value="$PROJECT_DIR$/_03_RestContrllers/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/_02_RestConrollers/pom.xml" />
+        <option value="$PROJECT_DIR$/_02_RestContrllers/pom.xml" />
+        <option value="$PROJECT_DIR$/_03_RestContrllers/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">

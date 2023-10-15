@@ -1,2 +1,4 @@
-package src.main.java.controller;public class ControllerOne {
+package src.main.java.controller;
+
+public class ControllerOne {
 }

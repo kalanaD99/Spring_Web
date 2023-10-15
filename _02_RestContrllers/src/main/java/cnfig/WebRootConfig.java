@@ -1,2 +1,4 @@
-package src.main.java.cnfig;public class WebRootConfig {
+package src.main.java.cnfig;
+
+public class WebRootConfig {
 }

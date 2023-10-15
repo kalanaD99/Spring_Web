@@ -1,17 +1,18 @@
 package controller;
 
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("one")
-public class ControllerOne {
-    public ControllerOne(){
-        System.out.println("Controller one initiated");
-    }
+@RequestMapping("home")
+public class ControllerOne  {
+
     @GetMapping
-    public void testMethod(){
-        System.out.println("Request Receiving");
+    public String testMethod(){
+        return "index";
     }
+
+
 }
