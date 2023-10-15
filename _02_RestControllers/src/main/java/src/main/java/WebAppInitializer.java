@@ -1,6 +1,7 @@
+package src.main.java;
 import config.WebAppConfig;
-import config.WebRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import src.main.java.config.WebRootConfig;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
