@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PathVariableController {
 
     //if we use {I001}... this is not a path...path should be always as "I001"(segment).....
-    @GetMapping(path = "{I001}")
+   /* @GetMapping(path = "{I001}")
     public String test(@PathVariable("I001") String itemCode){
         return itemCode;
     }
@@ -18,7 +18,7 @@ public class PathVariableController {
     @GetMapping(path = "{id}/{name}")
     public String tes2t(@PathVariable String id,@PathVariable String name){
         return id+" "+name;
-    }
+    }*/
 
 
                 // Alias
@@ -31,9 +31,13 @@ public class PathVariableController {
 
     // Validate path variable using Regular Expressions (Regex)
 
-    @GetMapping(path = "{id:[a-z]{3}}")
-    public String test4(@PathVariable("Id") String itemCode){
-        return itemCode;
+    @GetMapping(path = "{id:[I][0-9]{3}}")
+    public String test4(@PathVariable String id){
+        return id;
     }
 
+    @GetMapping(path = "{CustomerId:[I][a-z]{4}}/{CustomerName:[a-z]{3}}")
+    public String test5(@PathVariable("CustomerId") String id,@PathVariable("CustomerName") String name){
+        return id+" "+name;
+    }
 }

@@ -100,11 +100,14 @@
     <input type="text" id="name" name="name" required>
     <label for="address">Address:</label>
     <input type="text" id="address" name="address" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <button type="button" class="btn btn-primary"  onclick="addRow()" >Submit</button>
+    <label for="salary">Salary:</label>
+    <input type="text" id="salary" name="salary" required>
+
+
+    <button type="button" class="btn btn-primary"  onclick="saveCusomer()" >Save</button>
     <button type="button" class="btn btn-success"  onclick="updateRow()" >Update</button>
     <button type="button" class="btn btn-success"  onclick="DeleteRow()" >Delete</button>
+    <button type="button" class="btn btn-success"  onclick="getAll()" >getAll</button>
 
   </div>
 </form>
@@ -113,9 +116,9 @@
   <thead>
   <tr>
     <th>Student ID</th>
-    <th>Email</th>
+    <th>Name</th>
     <th>Address</th>
-    <th>Email</th>
+    <th>Salary</th>
   </tr>
   </thead>
   <tbody>
@@ -125,58 +128,38 @@
 
 <script>
 
-  $("#id").on("keypress",function (e) {
-    if (e.key=="Enter"){
 
-      var customerid=$("#id").val();
-      alert(customerid)
+ //Search customer
+   $("#id").on("keypress",function (e) {
+     if (e.key=="Enter"){
+       var customerID=$("#id").val();
 
-      $.ajax({
-        method: "GET",
-        url: "http://localhost:8080/BackEndProject_war_exploded/api/v1/customer/"+customerid,
+       $.ajax({
+         method: "GET",
+         url: "http://localhost:8080/_03_SpringWithMeaven_war_exploded/api/v1/customer/"+customerID,
 
-        success: function (response) {
-          // Handle the server response if needed
-          console.log(response);
-        }
-      });
-    }
-    console.log(e)
-  })
+         success: function (response) {
+           // Handle the server response if needed
+           console.log(response);
+         }
+       });
+     }
+     // console.log(e)
+   })
 
 
-  function addRow() {
-    // Get form values
-    var id = $("#id").val();
-    var name = $("#name").val();
-    var  address= $("#address").val();
-    var email = $("#email").val();
-
-    // Create a new row
-    var newRow = $("<tr>");
-    newRow.append("<td>" + id + "</td>");
-    newRow.append("<td>" + name + "</td>");
-    newRow.append("<td>" + address + "</td>");
-    newRow.append("<td>" + email + "</td>");
-
-    // Add the new row to the table
-   //$("#data-table tbody").append(newRow);
-
-    // Clear the form
-    $("#id").val("");
-    $("#name").val("");
-    $("#address").val("");
-    $("#email").val("");
-
-    // Send data to the server using jQuery AJAX
+//get All Customers through GET Method
+  function getAll(){
     $.ajax({
       type: "GET",
-      url: "http://localhost:8080/BackEndProject_war_exploded/api/v1/customer",
-      data: { id:id,name: name,address:address, email: email },
+      url: "http://localhost:8080/_03_SpringWithMeaven_war_exploded/api/v1/customer",
+      contentType: false,
+      processData: false,
+      //data: { id:id,name: name,address:address, email: email },
       success: function (response) {
         // Handle the server response if needed
         for (const customer of response) {
-          let row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.email}</td></tr>`;
+          let row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
           $("#data-table").append(row);
         }
         console.log(response);
@@ -184,16 +167,74 @@
     });
   }
 
+  //Save customer through POST Method
+  function saveCusomer(){
+    // Get form values
+    var id = $("#id").val();
+    var name = $("#name").val();
+    var address = $("#address").val();
+    var salary = $("#salary").val();
+
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:8080/_03_SpringWithMeaven_war_exploded/api/v1/customer",
+      //contentType: false,
+      //processData: false,
+      data: { id: id,name: name,address:address, salary: salary },
+      success: function (response) {
+        // Handle the server response if needed
+        for (const customer of response) {
+          let row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
+          $("#data-table").append(row);
+        }
+        console.log(response);
+      }
+    });
+  }
+
+
+
+  function addRow() {
+    // Get form values
+    var id = $("#id").val();
+    var name = $("#name").val();
+    var address = $("#address").val();
+    var salary = $("#salary").val();
+
+    // // Clear the form
+    // $("#id").val("");
+    // $("#name").val("");
+    // $("#address").val("");
+    // $("#email").val("");
+
+    // Send data to the server using jQuery AJAX
+    /* $.ajax({
+      type: "GET",
+      url: "http://localhost:8080/_03_SpringWithMeaven_war_exploded/customer/api/v1/customer",
+      contentType: false,
+      processData: false,
+      //data: { id:id,name: name,address:address, email: email },
+      success: function (response) {
+        // Handle the server response if needed
+        for (const customer of response) {
+          let row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
+          $("#data-table").append(row);
+        }
+        console.log(response);
+      }
+    });*/
+  }
+//ubdate customer
   function updateRow() {
     var customerObject = {
       id: $("#id").val(),
       name: $("#name").val(),
       address: $("#address").val(),
-      email: $("#email").val()
+      salary: $("#salary").val()
     };
 
     $.ajax({
-      url: "http://localhost:8080/BackEndProject_war_exploded/api/v1/customer",
+      url: "http://localhost:8080/_03_SpringWithMeaven_war_exploded/api/v1/customer",
       type: "PUT",
       contentType: "application/json",
       data: JSON.stringify(customerObject),
